@@ -5,7 +5,8 @@ BOdy h1 {
 }
 
 #main-header {
-  border: 2px solid #000;
+  border-bottom: 2px solid #000;
+
 
 }
 
@@ -67,4 +68,17 @@ section {
   max-width: 100%;
   width: 900px;
   margin: auto;
+}
+
+#context {
+  display: inline-block;
+  position: absolute;
+  background: #fff;
+  box-shadow: 2px 2px 15px rgba(0,0,0,.5);
+}
+
+.context-menu {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
 }

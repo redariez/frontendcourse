@@ -12,8 +12,16 @@
 
 
 </head>
-
 <body>
+  <div id="context">
+    <ul class="context-menu">
+      <li><a href="#">Back</a></li>
+      <li><a href="#">Forward</a></li>
+      <li><a href="#">Reload</a></li>
+      <li><a href="#">Save as...</a></li>
+      <li><a href="#">Inspect Element</a></li>
+    </ul>
+  </div>
   <header id="main-header">
     <h1 id="site-title">Best News Ever</h1>
 
@@ -37,14 +45,16 @@
 
 
   <section>
+    <form>
+      <textarea class="text" placeholder="type something"></textarea><br />
 
-    <textarea class="text" placeholder="type something"></textarea><br />
-
-    <button id="append">Append</button>
-    <button id="prepend">Prepend</button>
-    <button id="replace">Replace</button>
+      <button id="append">Append</button>
+      <button id="prepend">Prepend</button>
+      <button id="replace">Replace</button>
+    </form>
   </section>
   <section id="main">
+    <a href="https://google.com" target="_blank">Go to Google</a>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit sint qui illo quia, consequuntur praesentium voluptates eveniet, magnam ipsum assumenda corporis! Excepturi, rerum id. Officiis repellat, at eius atque ad.</p>
   </section>
 
