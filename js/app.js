@@ -1,19 +1,23 @@
 $(document).ready(function() {
   var el = document.getElementById('text');
+  $(document).on('contextmenu', function() {
+    return false;
+  });
+
+
 
   $(document).on('mousedown', function(event) {
-    event.preventDefault();
+    event.stopPropagation();
 
-    switch (event.which) {
-      case 1:
-        console.log("Clicked left mouse button");
-        break;
-      case 2:
-      console.log("Clicked middle button");
-      break;
-      case 3:
-      console.log("Clicked right button");
-      break;
+    if (event.which == 3) {
+      console.log(event.pageY, event.pageX);
+
+      $('#context').css({
+        top: event.pageY,
+        left: event.pageX
+      });
+
+      $('#context').fadeToggle();
     }
 
   });
