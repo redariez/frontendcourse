@@ -15,10 +15,12 @@
 <body>
   <div id="context">
     <ul class="context-menu">
+      <li><a href="#" class="hidden newtab">Open in new tab</a></li>
       <li><a href="#">Back</a></li>
       <li><a href="#">Forward</a></li>
       <li><a href="#">Reload</a></li>
-      <li><a href="#">Save as...</a></li>
+      <li><a href="#" class="hidden saveimg">Save image as...</a></li>
+      <li><a href="#" class="hidden save">Save as...</a></li>
       <li><a href="#">Inspect Element</a></li>
     </ul>
   </div>
@@ -53,7 +55,9 @@
       <button id="replace">Replace</button>
     </form>
   </section>
+
   <section id="main">
+    <img src="img/cat.jpg" alt="">
     <a href="https://google.com" target="_blank">Go to Google</a>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit sint qui illo quia, consequuntur praesentium voluptates eveniet, magnam ipsum assumenda corporis! Excepturi, rerum id. Officiis repellat, at eius atque ad.</p>
   </section>

@@ -97,3 +97,11 @@ section {
 .context-menu a:hover {
   background: #eee;
 }
+
+.context-menu a.hidden {
+  display:none;
+}
+
+.context-menu a.hidden.shown {
+  display: block;
+}
