@@ -1,11 +1,10 @@
 $(document).ready(function() {
   var el = document.getElementById('text');
-  $(document).on('contextmenu', function() {
-    return false;
   });
 
+gQuery(".my-selector").addClass("MYNEWCLASS");
 
-
+gQuery("#main").addClass("HELLO");
   $(document).on('mousedown', function(event) {
     event.stopPropagation();
 
@@ -70,5 +69,3 @@ $(document).ready(function() {
 
     $('.text').val('');
   });
-
-});
